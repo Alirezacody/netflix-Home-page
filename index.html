@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.3-dist/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.3-dist/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.3-dist/css/bootstrap-utilities.min.css"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="container-fluid p-0 m-0">
+      <!-- *****header start****** -->
+      <header class="row bgimg__header h-auto w-100 p-0 m-0">
+        <section
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 lable__logo--selector h-auto w-100 p-0 m-0"
+        >
+          <div class="row h-auto w-100 p-0 m-0">
+            <div
+              class="col xs-6 col-sm-6 col-md-4 col-lg-4 lable__logo p-0 m-0"
+            >
+              <img src="images/Netflix_Logo_PMS.png" alt="" />
+            </div>
+            <div class="col xs-6 col-sm-6 col-md-4 col-lg-4 p-0 m-0 dispka"></div>
+            <div class="col xs-6 col-sm-6 col-md-4 col-lg-4 p-0 m-0 res p-0 m-0">
+              <div class="border__act fl">
+                <select id="language" class="language border">
+                  <img src="images/icons8-translate-text-78.png" />
+                  <option value="en" selected>English</option>
+                  <option value="deu">Deutsch</option>
+                </select>
+              </div>
+              <a href="#" class="singin mx-4 fl">sing In</a>
+            </div>
+          </div>
+        </section>
+        <section
+          id="lable__text"
+          class="col.xs-12 col-sm-12 col-md-12 col-lg-12 m-0 p-0 h-auto w-100"
+        >
+          <div class="row p-0 m-0 w-100 lable__h--text h-auto">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 texts">
+              <h1 class="h1_">Unlimited movies, TV shows, and more</h1>
+              <p>Watch anywhere. Cancel anytime.</p>
+              <p>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
+              <div class="email__lable">
+                <form action="#" method="post" id="form__submit">
+                  <label for="email" class="border__lable">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email Address"
+                      class="email"
+                    />
+                  </label>
+                  <button type="button" class="get">
+                    Get Started<img
+                      src="images/icons8-forward-50 (1).png"
+                      alt=""
+                      style="width: 30px; height: 30px; margin-left: 10px"
+                    />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+          </div>
+        </section>
+      </header>
+      <!-- *****header end****** -->
+
+      <!--***************popcorn part start *************-->
+      <section class="row h-auto w-100 pos__lable--pop m-0">
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0 m-0 w-100 h-auto bg-primary lable__pop"
+        >
+          <div class="row h-auto w-100 m-0 p-0">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pop">
+              <div class="center__part">
+                <div><img src="images/icons8-popcorn-64.png" alt="" class="popcorn__img" /></div>
+                <div class="responsive">
+                  <h4>The Netflix you love for just €4.99.</h4>
+                  <p>Get the Standard with ads plan.</p>
+                  <a href="" class="learn"
+                    >Learn More
+                    <img
+                      src="images/icons8-forward-50 (2).png"
+                      alt=""
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                        color: blue;
+                      "
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--********** popcorn part end ********** -->
+
+      <section
+        id="lable__tv"
+        class="row h-auto w-100 m-0 p-0 lable__tv--section"
+      >
+        <!--tvsre part 1 start-->
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 h-auto p-0 m-0 lable__row--tv"
+        >
+          <div class="row h-auto w-100 p-0 m-0 lable__section--tvsr">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 lable__txt--tv">
+              <div class="lable__txt--head">
+                <h1>Enjoy on your TV</h1>
+                <p>
+                  Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                  Blu-ray players, and more.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 lable__img--tv">
+              <div class="lable__img--video">
+                <img src="images/tv.png" alt="" />
+                <video
+                  src="images/video-tv-0819.m4v"
+                  loop
+                  autoplay
+                  muted
+                  class="video__tvsre"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 p-1 border__gray"
+        ></div>
+        <!--tvsre part 1 end-->
+        
+        <!--tvsre part 2 start-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 h-auto p-0 m-0 lable__row--tv">
+          <div class="row h-auto w-100 p-0 m-0 lable__section--tvsr">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 lable__img--watch">
+              <div class="lable__img--watch2">
+                <img src="images/device-pile.png" alt=""  class="cont__video">
+                <video
+                  src="images/video-devices.m4v"
+                  loop
+                  autoplay
+                  muted
+                  class="video__watch"
+                ></video>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 lable__txt--watch">
+              <div class="lable__txt--watch2">
+                <h1>Watch everywhere</h1>
+                <p>
+                  Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 p-1 border__gray"></div>
+        <!--tvsre part 2 end-->
+
+        <!--tvsre part 3 strat-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kids h-auto w-100 p-0 m-0" id="kids">
+          <div class="row lable__kids h-auto w-100 m-0">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-0 p-0  lable__txt--kids">
+              <div class="kids__txt my-5">
+                <h1 class="kids__h1 m-0">Create profiles for kids</h1>
+                <p class="txt__kids m-0">Send kids on
+                   adventures with their favorite characters in
+                    a space made just for them—free with your membership.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0  lable__img--kids">
+              <img src="images/kids.png" alt="" class="img__kids">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 p-1 border__gray"></div>
+        <!--tvsre part 3 end-->
+
+        <!--tvsre part 4 strat-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-0 p-0 h-auto w-100" id="mobile">
+          <div class="row m-0 p-0 h-auto w-100 lable__mobile">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0  lable__img--mobile">
+              <img src="images/mobile-0819.jpg" class="img__mobile" alt="">
+              <div class="card__box row p-0 m-0">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h-100 m-0 float-starrt ">
+                  <img src="images/boxshot.png" class="h-100" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-0 m-0  float-starrt ">
+                  <p class="things p-0 m-0 mt-2">Stranger Things</p>
+                  <p class="Download p-0 m-0">Downloading...</p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-0 m-0 h-100  float-starrt">
+                  <div class="gif h-100 w-100"><img src="images/download-icon.gif" class="h-100" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 m-0 lable__txt--mobile">
+              <div class="txt__mobile">
+                <h1>Download your shows to watch offline</h1>
+                <p>Watch on a plane, train, or submarine...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 p-1 border__gray"></div>
+      </section>
+       <!--tvsre part 4 strat-->
+
+       <!-- Frequently Asked Questions strat  -->
+        <section id="lable__Frequently--all" class="row w-100 h-auto p-0 m-0">
+          <div class="container__head col-xs-12.col-sm-12 col-md-12 col-lg-12 m-0 p-0"><h1>Frequently Asked Questions</h1></div>
+          <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2 m-0 p-0"></div>
+          <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 m-0 p-0 lable__acardion h-auto">
+            <div class="acardion">
+              <h3 class="head__acardion">What is Netflix?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-0>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-0>
+              <p class="text close__acordion">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                 documentaries, and more on thousands of internet-connected devices.
+              </p>
+              <p class="text close__acordion mt-5">
+                You can watch as much as you want, whenever 
+                you want – all for one low monthly price. There's 
+                always something new to discover and new TV shows and movies are added every week!
+              </p>
+            </div>
+
+            <div class="acardion mt-3">
+              <h3 class="head__acardion">How much does Netflix cost?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-1>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-1>
+              <p class="text close__acordion">Watch Netflix on your smartphone, tablet, Smart TV, 
+                laptop, or streaming device, all for one fixed monthly fee. Plans
+                 range from EUR 5.49 to EUR 17.99 a month. No extra costs, no contracts.
+              </p>
+            </div>
+
+            <div class="acardion mt-3">
+              <h3 class="head__acardion">Where can I watch?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-2>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-2>
+              <p class="text close__acordion">Watch anywhere, anytime. 
+                Sign in with your Netflix account to watch instantly on
+                the web at netflix.com from your personal computer or on any 
+                internet-connected device that offers the Netflix app, including
+                smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+              </p>
+              <p class="text close__acordion mt-5">
+                You can also download your favorite shows 
+                with the iOS or Android app. Use downloads to 
+                watch while you're on the go and without an internet
+                 connection. Take Netflix with you anywhere.
+              </p>
+            </div>
+
+            <div class="acardion mt-3">
+              <h3 class="head__acardion">How do I cancel?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-3>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-3>
+              <p class="text close__acordion">Netflix is flexible. There are no pesky contracts and no commitments. 
+                You can easily cancel your account online in two clicks. 
+                There are no cancellation fees – start or stop your account anytime.
+              </p>
+            </div>
+
+            <div class="acardion mt-3">
+              <h3 class="head__acardion">What can I watch on Netflix?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-4>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-4>
+              <p class="text close__acordion">Netflix has an extensive library of feature films,
+                 documentaries, TV shows, anime, award-winning Netflix
+                  originals, and more. Watch as much as you want, anytime you want.
+              </p>
+            </div>
+
+            <div class="acardion mt-3">
+              <h3 class="head__acardion">Is Netflix good for kids?</h3>
+              <button type="button" class="open__ac btn__ac" data-btn-5>+</button>
+            </div>
+            <div class="txt__ac close__acordion p-0 m-0" data-ac-5>
+              <p class="text close__acordion">The Netflix Kids experience is included in your
+                 membership to give parents control while kids enjoy 
+                 family-friendly TV shows and movies in their own space.
+              </p>
+              <p class="text close__acordion">
+                Kids profiles come with PIN-protected parental 
+                controls that let you restrict the maturity rating of 
+                content kids can watch and block specific 
+                titles you don’t want kids to see.
+              </p>
+            </div>
+          </div>
+
+          <div class="container__text"><p>Ready to watch? Enter your email to create or restart your membership.</p></div>
+          <div class="email__2 ">
+            <form action="#" method="post" id="form__submit">
+              <label for="email" class="border__lable2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                  class="email2"
+                />
+              </label>
+              <button type="button" class="get2">
+                Get Started<img
+                  src="images/icons8-forward-50 (1).png"
+                  alt=""
+                  style="width: 30px; height: 30px; margin-left: 10px"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2 m-0 p-0"></div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 p-1 border__gray"></div>
+        </section>
+
+        <section id="bottom__menu" class="row h-auto w-100 lable__bottom--menu p-1 m-0">
+          <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2 m-0 p-0"></div>
+          <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 m-0 p-0 h-auto py-1">
+            <div class="row m-0 p-1 w-100">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-0 p-0 py-1 lable__menu--item">
+                <ul class="lable__items lable__1 list-unstyled">
+                  <li class="list__item"><a href="" class="link__item">Questions? Contact us.</a></li>
+                  <li class="list__item"><a href="" class="link__item">FAQ</a></li>
+                  <li class="list__item"><a href="" class="link__item">Investor Relations</a></li>
+                  <li class="list__item"><a href="" class="link__item">Ways to Watch</a></li>
+                  <li class="list__item"><a href="" class="link__item">Corporate Information</a></li>
+                  <li class="list__item"><a href="" class="link__item p-0 m-0">Legal Notices</a></li>
+                  <li class="list__item p-0 m-0">
+                    <div class="border__act2">
+                      <select id="language2" class="language2 border p-0 m-0">
+                        <option value="en" selected class="p-0 m-0">English</option>
+                        <option value="en" selected class="p-0 m-0">Italiano</option>
+                      </select>
+                    </div>
+                </li>
+                <li class="list__item"><a href="" class="link__item Netflix p-0 m-0">Netflix Italy</a></li>
+                </ul>
+                <ul class="lable__items lable__2 list-unstyled">
+                  <li class="list__item"><a href="" class="link__item">Help Center</a></li>
+                  <li class="list__item"><a href="" class="link__item">Jobs</a></li>
+                  <li class="list__item"><a href="" class="link__item">Terms of Use</a></li>
+                  <li class="list__item"><a href="" class="link__item">Contact Us</a></li>
+                  <li class="list__item"><a href="" class="link__item">Only on Netflix</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-0 p-0 py-1">
+                <ul class="lable__items lable__2 list-unstyled">
+                  <li class="list__item"><a href="" class="link__item">Account</a></li>
+                  <li class="list__item"><a href="" class="link__item">Redeem Gift Cards</a></li>
+                  <li class="list__item"><a href="" class="link__item">Privacy</a></li>
+                  <li class="list__item"><a href="" class="link__item">Speed Test</a></li>
+                  <li class="list__item"><a href="" class="link__item">Ad Choices</a></li>
+                </ul>
+
+                <ul class="lable__items lable__2 list-unstyled">
+                  <li class="list__item"><a href="" class="link__item">Media Center</a></li>
+                  <li class="list__item"><a href="" class="link__item">Buy Gift Cards</a></li>
+                  <li class="list__item"><a href="" class="link__item">Cookie Preferences</a></li>
+                  <li class="list__item"><a href="" class="link__item">Legal Guarantee</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2 m-0 p-0"></div>
+        </section>
+    </main>
+
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
